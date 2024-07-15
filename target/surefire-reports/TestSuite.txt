@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.252 s <<< FAILURE! - in TestSuite
+titleTest(basicTests.First)  Time elapsed: 0.796 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'Mac.local', ip: 'fe80:0:0:0:ce9:2dab:642b:93ca%en0'
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.3', java.version: '19.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: 124, goog:chromeOptions: {args: [], extensions: []}, pageLoadStrategy: normal}]}]
+Capabilities {browserName: chrome, browserVersion: 124, goog:chromeOptions: {args: [], extensions: []}, pageLoadStrategy: normal}
+	at basicTests.First.titleTest(First.java:15)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+	at basicTests.First.titleTest(First.java:15)
+Caused by: java.net.ConnectException
+Caused by: java.nio.channels.ClosedChannelException
+
+titleTest(basicTests.EdgeTest)  Time elapsed: 0.797 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'Mac.local', ip: 'fe80:0:0:0:ce9:2dab:642b:93ca%en0'
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.3', java.version: '19.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}, pageLoadStrategy: normal}]}]
+Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}, pageLoadStrategy: normal}
+	at basicTests.EdgeTest.titleTest(EdgeTest.java:16)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+	at basicTests.EdgeTest.titleTest(EdgeTest.java:16)
+Caused by: java.net.ConnectException
+Caused by: java.nio.channels.ClosedChannelException
+
